@@ -2,12 +2,16 @@
     CSS pagina contactos
 */
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Elimina los bordes blancos que ponen los navegadores por defecto */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 body {
