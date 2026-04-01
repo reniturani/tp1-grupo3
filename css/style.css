@@ -13,9 +13,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* BODY (tipografias, color de fondo y color)*/
+/* BODY */
 body {
     font-family: Arial, sans-serif;
     background-color: var(--white);
     color: var(--black);
+}
+/* HEADER */
+header {
+    background-color: var(--fern);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+/* NAV */
+nav {
+    background-color: var(--medium-jungle);
+    padding: 10px;
+    text-align: center;
+}
+/* links dentro del nav */
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold; /* negrita */
+}
+/* efecto para cuando pasamos el mouse */
+nav a:hover {
+    text-decoration: underline; /* para que aparezca subrayado */
 }
