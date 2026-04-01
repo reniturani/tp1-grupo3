@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="page-contacto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
-<body>
+<body class="page-contacto">
     <header>
-        <!-- Barra de navegacion por las paginas con links relativos -->
         <nav class="nav" id="nav-contacto">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -20,31 +19,30 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-contacto">
         <section id="contacto" class="section-contacto">
             <h1>Formulario de contacto</h1>
         </section>
         
-        <!-- httpbin para ver si el POST se realiza correctamente -->
-        <form action="https://httpbin.org/post" method="POST" target="_blank">
+        <form class="form-contacto" action="https://httpbin.org/post" method="POST" target="_blank">
 
             <div class="campo-formulario">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan" required>
+                <label class="label-contacto" for="nombre">Nombre:</label>
+                <input class="input-contacto" type="text" id="nombre" name="nombre" placeholder="Ej: Juan" required>
             </div>
 
             <div class="campo-formulario">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Ej: Martinez" required> 
+                <label class="label-contacto" for="apellido">Apellido:</label>
+                <input class="input-contacto" type="text" id="apellido" name="apellido" placeholder="Ej: Martinez" required> 
             </div>
 
             <div class="campo-formulario">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+                <label class="label-contacto" for="email">Email:</label>
+                <input class="input-contacto" type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
             </div>
 
             <div class="campo-formulario">
-                <label for="mensaje">Mensaje:</label>
+                <label class="label-contacto" for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta aquí..." maxlength="1500" required></textarea>
             </div>
 
