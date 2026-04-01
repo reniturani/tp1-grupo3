@@ -117,6 +117,28 @@ h1 {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     
 }
+.instalacion {
+    display: inline-block;
+    background-color: #50A144;
+    font-weight:bold;
+    width: 350px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.diagnostico{
+    display: inline-block;
+    background-color: #50A144;
+    font-weight:bold;
+    width: 350px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
 
 
 /* ------------------ FIN DEL ARCHIVO SERVICIOS.html ---------------- */
