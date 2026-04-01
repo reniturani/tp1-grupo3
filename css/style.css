@@ -1,20 +1,21 @@
-/*
-    CSS pagina contactos
-*/
+/* ------------------------------------------------------------------------------ */
+/* INICIO ARCHIVO CONTACTO.HTML */
 
-*, *::before, *::after {
+.page-contacto * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 /* Elimina los bordes blancos que ponen los navegadores por defecto */
-html, body {
+html.page-contacto, body.page-contacto {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
 }
 
-body {
+body.page-contacto {
     background-color: #ababab40;
     font-family: sans-serif;
     display: flex;
@@ -22,9 +23,9 @@ body {
 }
 
 /* Header */
-header {
+.page-contacto header {
     width: 100%;
-    background-color: #000000;
+    background-color: var(--black);
     padding: 28px 0;
     margin: 0;
 }
@@ -42,7 +43,7 @@ header {
     display: inline-block;
     padding: 8px 20px; 
     border-radius: 30px;
-    color: #FEFEFF;
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -51,36 +52,36 @@ header {
     }
 
     #nav-contacto a:hover {
-        color: #50A144;
-        box-shadow: 0 0 14px 8px #50a144bb;
+        color: var(--fern);
+        box-shadow: 0 0 14px 8px var(--medium-jungle);
     }
 
     /* Main */
-    main {
+    #main-contacto {
         width: 90%;
         max-width: 800px;
         margin: 60px auto;
-        background-color: #346C2B;
+        background-color: var(--fern);
         padding: 48px;
         border-radius: 8px;
-        border: 4px solid #000000;
+        border: 4px solid var(--black);
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     }
 
     /* Titulo del formulario */
     .section-contacto h1 {
-        color: #FEFEFF;
+        color: var(--white);
         text-align: center;
         margin: 0 0 32px 0;
         font-size: 32px;
         text-transform: uppercase;
         letter-spacing: 0;
-        border-bottom: 4px solid #50A144;
+        border-bottom: 4px solid var(--medium-jungle);
         padding-bottom: 16px;
     }
 
     /* Formulario */
-    form {
+    .form-contacto {
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -93,8 +94,8 @@ header {
         width: 100%;
     }
 
-    label {
-        color: #FEFEFF;
+    .label-contacto {
+        color: var(--white);
         margin-bottom: 8px;
         font-weight: bold;
         font-size: 16px;
@@ -102,12 +103,12 @@ header {
     }
 
     /* Inputs */
-    input, textarea {
+    .input-contacto, #mensaje {
         width: 100%;
         padding: 16px;
-        border: 4px solid #000000;
+        border: 4px solid var(--black);
         border-radius: 0px;
-        background-color: #ffffff;
+        background-color: var(--white);
         font-size: 16px;
         font-family: inherit;
         box-sizing: border-box;
@@ -115,9 +116,9 @@ header {
         transition: 0.3s;
     }
 
-    input:focus, textarea:focus {
+    .page-contacto input:focus, .page-contacto textarea:focus {
         outline: none;
-        border-color: #50A144;
+        border-color: var(--medium-jungle);
         box-shadow: 0 0 8px rgba(80, 161, 68, 0.5);
     }
 
@@ -129,10 +130,10 @@ header {
         width: 100%;
     }
 
-    button {
+    .page-contacto button {
         flex: 1;
         padding: 20px;
-        border: 4px solid #000000;
+        border: 4px solid var(--black);
         border-radius: 0px;
         cursor: pointer;
         font-weight: bold;
@@ -141,34 +142,36 @@ header {
         transition: 0.2s;
     }
 
-    button[type="submit"] {
-        background-color: #50A144;
-        color: #FEFEFF;
+    .page-contacto button[type="submit"] {
+        background-color: var(--fern);
+        color: var(--white);
     }
 
     /* Efecto del boton cuando el mouse pasa por arriba */
-    button[type="submit"]:hover {
-        background-color: #346C2B;
+    .page-contacto button[type="submit"]:hover {
+        background-color: var(--medium-jungle);
     }
 
-    button[type="reset"] {
-        background-color: #6D5B4D;
-        color: #FEFEFF;
+    .page-contacto button[type="reset"] {
+        background-color: var(--ash-brown);
+        color: var(--white);
     }
 
     /* Efecto del boton cuando el mouse pasa por arriba */
-    button[type="reset"]:hover {
-        background-color: #000000;
+    .page-contacto button[type="reset"]:hover {
+        background-color: var(--black);
     }
 
     /* Footer */
-    footer {
+    .page-contacto footer {
         width: 100%;
-        background-color: #000000;
-        color: #FEFEFF;
+        background-color: var(--black);
+        color: var(--white);
         text-align: center;
         padding: 22px;
         margin-top: auto;
         font-weight: bold;
         letter-spacing: 0;
     }
+
+/* ------------------ FIN DEL ARCHIVO CONTACTO.HTML ---------------- */
