@@ -152,11 +152,3 @@ h1 {
 
 /* ------------------------------------------------------------------------------ */
 /* INICIO ARCHIVO PEDIDOS.HTML */
-.form{
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 30px;
-    background-color: var(--ash-brown);
-    border: 1px solid var(--white);
-    border-radius: 15px;
-}
