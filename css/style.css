@@ -6,3 +6,16 @@
     --medium-jungle: #50a144;
     --ash-brown: #6d5b4d;
 }
+/* ARCHIVO FAQ.HTML */
+/* RESET (para borrar los espacios automaticos y que quede mas prolijo)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BODY (tipografias, color de fondo y color)*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
