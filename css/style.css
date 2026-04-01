@@ -68,6 +68,7 @@ section {
 /* TEXTO DE LA CARD */
 .card p {
     font-size: 14px;
+    color: var(--black);
 }
 /* FOOTER */
 footer {
@@ -152,3 +153,109 @@ h1 {
 
 /* ------------------------------------------------------------------------------ */
 /* INICIO ARCHIVO PEDIDOS.HTML */
+
+.seccion-pedidos-ari{
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccion-pedidos-ari .grupo_grid_servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+/* 1. SERVICIOS */
+.seccion-pedidos-ari .grupo_servicios {
+    background-color: var(--white);
+    border: 1px solid var(--ash-brown);
+    border-radius: 10px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.seccion-pedidos-ari .grupo_servicios label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--black);
+    text-align: left;
+
+}
+
+.seleccion-pedidos-ari .grupo_servicios:hover {
+    border-color: var(--medium-jungle);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transform: translateY(-3px); 
+
+    font-weight: 800;
+}
+
+.seccion-pedidos-ari .grupo_servicios input[type="checkbox"]{
+    margin-left: 25px;
+    cursor:pointer;
+    transform: scale(1.2);
+}
+
+
+/* 2. MÉTODO DE PAGO*/
+.seccion-pedidos-ari .pago-titulo {
+    background-color: var(--ash-brown);
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 60%; 
+    box-sizing: border-box;
+}
+
+.seccion-pedidos-ari .pago p {
+    color: var(--white);
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.seccion-pedidos-ari .pago {
+    background-color: transparent; 
+    border: none;                  
+    display: flex;
+    align-items: center;
+    gap: 15px;                     
+    margin: 10px 0;
+    padding: 0;
+    
+}
+
+
+.seccion-pedidos-ari .pago label {
+    background-color: var(--white); 
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    padding: 8px 15px;
+    width: fit-content;           
+    margin: 0;
+    color: var(--black);
+    font-weight: 800;              
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.seccion-pedidos-ari .pago input[type="radio"] {
+    cursor: pointer;
+    transform: scale(1.2);         
+}
