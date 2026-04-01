@@ -94,8 +94,6 @@ h1 {
     
 }
 
-
-
 .limpieza {
     display: inline-block;
     background-color: #50A144;
@@ -119,7 +117,6 @@ h1 {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     
 }
-
 .instalacion {
     display: inline-block;
     background-color: #50A144;
@@ -142,7 +139,6 @@ h1 {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-
 .precio {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-weight:bold;
@@ -150,6 +146,7 @@ h1 {
     color: #000000;
 
 }
+
 
 /* ------------------ FIN DEL ARCHIVO SERVICIOS.html ---------------- */
 
