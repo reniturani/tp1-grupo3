@@ -139,6 +139,13 @@ h1 {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
+.precio {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight:bold;
+    font-size: 22px;
+    color: #000000;
+
+}
 
 
 /* ------------------ FIN DEL ARCHIVO SERVICIOS.html ---------------- */
