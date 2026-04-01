@@ -1,0 +1,78 @@
+/* ROOT para definir las variables de colores */ 
+:root {
+    --black: #000000;
+    --fern: #346c2b;
+    --white: #fefeff;
+    --medium-jungle: #50a144;
+    --ash-brown: #6d5b4d;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* INICIO ARCHIVO FAQ.HTML */
+/* RESET (para borrar los espacios automaticos y que quede mas prolijo)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+/* HEADER */
+header {
+    background-color: var(--fern);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+/* NAV */
+nav {
+    background-color: var(--medium-jungle);
+    padding: 10px;
+    text-align: center;
+}
+/* links dentro del nav */
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold; /* negrita */
+}
+/* efecto para cuando pasamos el mouse */
+nav a:hover {
+    text-decoration: underline; /* para que aparezca subrayado */
+}
+/* SECTION (donde estan todas las preguntas) */
+section {
+    padding: 20px;
+    text-align: center;
+}
+/* CARDS (cada pregunta individual) */
+.card {
+    display: inline-block; /* para que esten una al lado de la otra */
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid var(--ash-brown);
+    border-radius: 10px; /* redondee los bordes */
+    background-color: var(--white);
+}
+/* TITULO DE LA CARD */
+.card h3 {
+    color: var(--medium-jungle);
+    margin-bottom: 10px; /* espacio abajo del titulo */
+}
+/* TEXTO DE LA CARD */
+.card p {
+    font-size: 14px;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* ------------------ FIN DEL ARCHIVO FAQ.HTML ---------------- */
