@@ -1,4 +1,4 @@
-/* ROOT para definir los colores y variables */ 
+/* ROOT para definir las variables de colores */ 
 :root {
     --black: #000000;
     --fern: #346c2b;
@@ -6,7 +6,9 @@
     --medium-jungle: #50a144;
     --ash-brown: #6d5b4d;
 }
-/* ARCHIVO FAQ.HTML */
+
+/* ------------------------------------------------------------------------------ */
+/* INICIO ARCHIVO FAQ.HTML */
 /* RESET (para borrar los espacios automaticos y que quede mas prolijo)*/
 * {
     margin: 0;
@@ -43,3 +45,31 @@ nav a {
 nav a:hover {
     text-decoration: underline; /* para que aparezca subrayado */
 }
+/* SECTION (donde estan todas las preguntas) */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* CARDS (cada pregunta individual) */
+.card {
+    display: inline-block; /* para que esten una al lado de la otra */
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid var(--ash-brown);
+    border-radius: 10px; /* redondee los bordes */
+    background-color: var(--white);
+}
+
+/* TITULO DE LA CARD */
+.card h3 {
+    color: var(--medium-jungle);
+    margin-bottom: 10px; /* espacio abajo del titulo */
+}
+
+/* TEXTO DE LA CARD */
+.card p {
+    font-size: 14px;
+}
+/* ------------------ FIN DEL ARCHIVO FAQ.HTML ---------------- */
