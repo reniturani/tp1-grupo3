@@ -50,7 +50,6 @@ section {
     padding: 20px;
     text-align: center;
 }
-
 /* CARDS (cada pregunta individual) */
 .card {
     display: inline-block; /* para que esten una al lado de la otra */
@@ -61,15 +60,19 @@ section {
     border-radius: 10px; /* redondee los bordes */
     background-color: var(--white);
 }
-
 /* TITULO DE LA CARD */
 .card h3 {
     color: var(--medium-jungle);
     margin-bottom: 10px; /* espacio abajo del titulo */
 }
-
 /* TEXTO DE LA CARD */
 .card p {
     font-size: 14px;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
 /* ------------------ FIN DEL ARCHIVO FAQ.HTML ---------------- */
