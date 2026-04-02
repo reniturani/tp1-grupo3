@@ -266,7 +266,7 @@ h1 {
     transform: scale(1.2);         
 }
 
-/* 2. SELECCIÓN DE FECHA*/
+/* 3. SELECCIÓN DE FECHA*/
 
 
 .seccion-pedidos-ari .fecha {
@@ -297,4 +297,40 @@ h1 {
     border: 1px solid var(--ash-brown);
     border-radius: 5px;
     color: var(--black);
+}
+
+/* 4. BOTONES*/
+
+.seccion-pedidos-ari .botones button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: 2px solid var(--white); /* Recuadro solicitado */
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.seccion-pedidos-ari .botones button[type="submit"] {
+    background-color: var(--medium-jungle);
+    color: var(--white);
+}
+
+.seccion-pedidos-ari .botones button[type="reset"] {
+    background-color: var(--ash-brown);
+    color: var(--white);
+}
+
+.seccion-pedidos-ari .botones button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* 5. FOOTER*/
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
 }
