@@ -34,7 +34,7 @@ body {
     height: 400px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #000000;
+    border: 3px solid #fefeff;
 
 }
 .contenedor-equipo{
@@ -69,14 +69,23 @@ margin-bottom: 50px;
     letter-spacing: 2px;
 }
 .puesto{
-  font-weight: bold;
-  font-size: 1.5em; 
+    color: #fefeff;
+    font-weight: bold;
+    font-size: 1.5em; 
 }
 .leyenda{
 font-style: italic;
-color: #000000;
+color: #fefeff;
 font-size: 1em;
 }
 footer{
     text-align: center;
+    background-color: #000000;
+    color: #fefeff;
+}
+.contacto {
+    color: #fefeff;
+}
+.personal h3{
+    color: #fefeff;
 }
