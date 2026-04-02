@@ -4,38 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEDIDOS DE SERVICIOS</title>
+    <link rel="stylesheet" href="../css/style.css"
 </head>
 <body>
-    <h1>Selección de servicio</h1>
+    <div class="seccion-pedidos-ari">
+    
+        <h1>Selección de servicio</h1>
 
     <form action="#">
-        <div class="grupo_servicios">
-            <input type="checkbox" id="servicio1" name="servicios[]" value="limpieza">
-            <label for = "servicio1">
-                Limpieza interna y mantenimiento
-            </label>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="equipo.html">Equipo</a>
+            <a href="pedido.html">Pedidos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
+        </nav>
+        <br>
+
+        <div class=" grupo_grid_servicios">
+            <div class="grupo_servicios">
+                <input type="checkbox" id="servicio1" name="servicios[]" value="limpieza">
+                <label for = "servicio1">
+                    Limpieza interna y mantenimiento
+                </label>
+            </div>
+
+            <div class="grupo_servicios">
+                <input type="checkbox" id="servicio2" name="servicios[]" value="componentes">
+                <label for = "servicio2">
+                    Cambio de componentes y armado de pc
+                </label>
+            </div>
+            <div class="grupo_servicios">
+                <input type="checkbox" id="servicio3" name="servicios[]" value="instalacion">
+                <label for = "servicio3">
+                    Instalación de software y SO
+                </label>
+            </div>
+            <div class="grupo_servicios">
+                <input type="checkbox" id="servicio4" name="servicios[]" value="diagnostico">
+                <label for = "servicio4">
+                    Diagnostico de fallas
+                </label>
+            </div><br>
+
         </div>
 
-        <div class="grupo_servicios">
-            <input type="checkbox" id="servicio2" name="servicios[]" value="componentes">
-            <label for = "servicio2">
-                Cambio de componentes y armado de pc
-            </label>
-        </div>
-        <div class="grupo_servicios">
-            <input type="checkbox" id="servicio3" name="servicios[]" value="instalacion">
-            <label for = "servicio3">
-                Instalación de software y SO
-            </label>
-        </div>
-        <div class="grupo_servicios">
-            <input type="checkbox" id="servicio4" name="servicios[]" value="diagnostico">
-            <label for = "servicio4">
-                Diagnostico de fallas
-            </label>
-        </div><br>
-
-        <div class="pago">
+        <div class="pago-titulo">
             <p>Seleccione el medio de pago: </p>
         </div>
 
@@ -60,9 +76,14 @@
         </div><br>
         
         <div class = "botones">
-            <button type="submit">Enviar pedido</button>
+            <a href="../index.html"> <button type="button">Enviar pedido</button>
+            </a>
             <button type="reset">Cancelar pedido</button>
         </div>
     </form>
+    <footer>
+        <p>2026 - SEICO Computación </p>
+    </footer>
+    </div>
 </body>
 </html>

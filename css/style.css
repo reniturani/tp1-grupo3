@@ -68,6 +68,7 @@ section {
 /* TEXTO DE LA CARD */
 .card p {
     font-size: 14px;
+    color: var(--black);
 }
 /* FOOTER */
 footer {
@@ -150,6 +151,188 @@ h1 {
 /* ------------------ FIN DEL ARCHIVO SERVICIOS.html ---------------- */
 
 /* ------------------------------------------------------------------------------ */
+/* INICIO ARCHIVO PEDIDOS.HTML */
+
+.seccion-pedidos-ari{
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto; /*Sirve para centrar*/
+}
+
+/*Acá hago una especie de grilla para poder acomodarlos de a dos*/
+.seccion-pedidos-ari .grupo_grid_servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 30px auto; /*Lo centro automaticamente*/
+    padding: 10px;
+}
+
+/* 1. SERVICIOS */
+.seccion-pedidos-ari .grupo_servicios {
+    background-color: var(--white);
+    border: 1px solid var(--ash-brown);
+    border-radius: 10px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.seccion-pedidos-ari .grupo_servicios label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--black);
+    text-align: left;
+
+}
+
+.seleccion-pedidos-ari .grupo_servicios:hover {
+    border-color: var(--medium-jungle);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transform: translateY(-3px); /*Con esto hago que la cajita "flote" hacia arriba*/
+
+    font-weight: 800;
+}
+
+.seccion-pedidos-ari .grupo_servicios input[type="checkbox"]{
+    margin-left: 25px;
+    cursor:pointer;
+    transform: scale(1.2); /*Agranda el checkbox*/
+}
+
+
+/* 2. MÉTODO DE PAGO*/
+.seccion-pedidos-ari .pago-titulo {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 12px 30px;
+    
+    width: fit-content;
+    margin: 30px auto;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.seccion-pedidos-ari .pago-titulo p {
+    color: var(--black);
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+
+.seccion-pedidos-ari .pago {
+    background-color: transparent; 
+    border: none;                  
+    display: flex;
+    align-items: center;
+
+    justify-content: center; /*Esto centra el radio button y el texto*/
+    gap: 15px;
+    margin: 10px auto;
+    padding: 0;
+    max-width: 400px;
+    
+}
+
+
+.seccion-pedidos-ari .pago label {
+    background-color: var(--white); 
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    padding: 8px 15px;
+    width: fit-content;           
+    margin: 0;
+    color: var(--black);
+    font-weight: 800;              
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.seccion-pedidos-ari .pago input[type="radio"] {
+    cursor: pointer;
+    transform: scale(1.2);         
+}
+
+/* 3. SELECCIÓN DE FECHA*/
+
+
+.seccion-pedidos-ari .fecha {
+    background-color: var(--white);
+    border: 1px solid var(--ash-brown);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.seccion-pedidos-ari .fecha label {
+    display: block;
+    font-weight: bold;
+    color: var(--medium-jungle);
+    margin-bottom: 10px;
+}
+
+/* Estilo para el cuadrito de la fecha */
+.seccion-pedidos-ari .fecha input[type="date"] {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px;
+    border: 1px solid var(--ash-brown);
+    border-radius: 5px;
+    color: var(--black);
+}
+
+/* 4. BOTONES*/
+
+.seccion-pedidos-ari .botones button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: 2px solid var(--white); /* Recuadro solicitado */
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*Estilo específico para el botón enviar*/
+.seccion-pedidos-ari .botones button[type="button"] {
+    background-color: var(--medium-jungle);
+    color: var(--white);
+}
+/*Estilo específico para el botón cancelar/reset*/
+.seccion-pedidos-ari .botones button[type="reset"] {
+    background-color: var(--ash-brown);
+    color: var(--white);
+}
+
+.seccion-pedidos-ari .botones button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.seccion-pedidos-ari .botones a {
+    text-decoration: none; 
+    display: inline-block;  
+    vertical-align: middle; 
+}
+/* ------------------ FIN DEL ARCHIVO PEDIDOS.html ---------------- */
 /* INICIO ARCHIVO CONTACTO.HTML */
 
 .page-contacto * {
