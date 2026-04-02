@@ -148,7 +148,6 @@ h1 {
 
 }
 
-
 /* ------------------ FIN DEL ARCHIVO SERVICIOS.html ---------------- */
 
 /* ------------------------------------------------------------------------------ */
@@ -334,3 +333,187 @@ h1 {
     vertical-align: middle; 
 }
 /* ------------------ FIN DEL ARCHIVO PEDIDOS.html ---------------- */
+/* INICIO ARCHIVO CONTACTO.HTML */
+
+.page-contacto * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elimina los bordes blancos que ponen los navegadores por defecto */
+html.page-contacto, body.page-contacto {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body.page-contacto {
+    background-color: #ababab40;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.page-contacto header {
+    width: 100%;
+    background-color: var(--black);
+    padding: 28px 0;
+    margin: 0;
+}
+
+#nav-contacto {
+    background-color: transparent; 
+    padding: 0;                 
+    text-align: left;             
+}
+
+#nav-contacto ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-contacto a {
+    display: inline-block;
+    padding: 8px 20px; 
+    border-radius: 30px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    transition: 0.2s;
+    margin: 0;
+    }
+
+#nav-contacto a:hover {
+    color: var(--fern);
+    box-shadow: 0 0 14px 8px var(--medium-jungle);
+    }
+
+/* Main */
+#main-contacto {
+    width: 90%;
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: var(--fern);
+    padding: 48px;
+    border-radius: 8px;
+    border: 4px solid var(--black);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Titulo del formulario */
+.section-contacto h1 {
+    color: var(--white);
+    text-align: center;
+    margin: 0 0 32px 0;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    border-bottom: 4px solid var(--medium-jungle);
+    padding-bottom: 16px;
+}
+
+/* Formulario */
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.label-contacto {
+    color: var(--white);
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Inputs */
+.input-contacto, #mensaje {
+    width: 100%;
+    padding: 16px;
+    border: 4px solid var(--black);
+    border-radius: 0px;
+    background-color: var(--white);
+    font-size: 16px;
+    font-family: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.page-contacto input:focus, .page-contacto textarea:focus {
+    outline: none;
+    border-color: var(--medium-jungle);
+    box-shadow: 0 0 8px rgba(80, 161, 68, 0.5);
+}
+
+/* Botones */
+.botones-formulario {
+    display: flex;
+    gap: 20px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.page-contacto button {
+    flex: 1;
+    padding: 20px;
+    border: 4px solid var(--black);
+    border-radius: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.page-contacto button[type="submit"] {
+    background-color: var(--fern);
+    color: var(--white);
+}
+
+/* Efecto del boton cuando el mouse pasa por arriba */
+.page-contacto button[type="submit"]:hover {
+    background-color: var(--medium-jungle);
+}
+
+.page-contacto button[type="reset"] {
+    background-color: var(--ash-brown);
+    color: var(--white);
+}
+
+/* Efecto del boton cuando el mouse pasa por arriba */
+    .page-contacto button[type="reset"]:hover {
+    background-color: var(--black);
+}
+
+/* Footer */
+.page-contacto footer {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 22px;
+    margin-top: auto;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+/* ------------------ FIN DEL ARCHIVO CONTACTO.HTML ---------------- */
