@@ -157,15 +157,16 @@ h1 {
 .seccion-pedidos-ari{
     padding: 40px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /*Sirve para centrar*/
 }
 
+/*Acá hago una especie de grilla para poder acomodarlos de a dos*/
 .seccion-pedidos-ari .grupo_grid_servicios {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     max-width: 900px;
-    margin: 30px auto;
+    margin: 30px auto; /*Lo centro automaticamente*/
     padding: 10px;
 }
 
@@ -198,7 +199,7 @@ h1 {
 .seleccion-pedidos-ari .grupo_servicios:hover {
     border-color: var(--medium-jungle);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    transform: translateY(-3px); 
+    transform: translateY(-3px); /*Con esto hago que la cajita "flote" hacia arriba*/
 
     font-weight: 800;
 }
@@ -206,7 +207,7 @@ h1 {
 .seccion-pedidos-ari .grupo_servicios input[type="checkbox"]{
     margin-left: 25px;
     cursor:pointer;
-    transform: scale(1.2);
+    transform: scale(1.2); /*Agranda el checkbox*/
 }
 
 
@@ -237,7 +238,7 @@ h1 {
     display: flex;
     align-items: center;
 
-    justify-content: center;
+    justify-content: center; /*Esto centra el radio button y el texto*/
     gap: 15px;
     margin: 10px auto;
     padding: 0;
@@ -311,11 +312,12 @@ h1 {
     transition: 0.3s;
 }
 
-.seccion-pedidos-ari .botones button[type="submit"] {
+/*Estilo específico para el botón enviar*/
+.seccion-pedidos-ari .botones button[type="button"] {
     background-color: var(--medium-jungle);
     color: var(--white);
 }
-
+/*Estilo específico para el botón cancelar/reset*/
 .seccion-pedidos-ari .botones button[type="reset"] {
     background-color: var(--ash-brown);
     color: var(--white);
@@ -326,11 +328,9 @@ h1 {
     filter: brightness(1.1);
 }
 
-/* 5. FOOTER*/
-.footer {
-    background-color: var(--black);
-    color: var(--white);
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+.seccion-pedidos-ari .botones a {
+    text-decoration: none; 
+    display: inline-block;  
+    vertical-align: middle; 
 }
+/* ------------------ FIN DEL ARCHIVO PEDIDOS.html ---------------- */
