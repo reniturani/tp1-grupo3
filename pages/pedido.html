@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDIDOS DE SERVICIOS</title>
+    <link rel="stylesheet" href="../css/style.css"
+</head>
+<body>
+    <div class="seccion-pedidos-ari">
+    
+        <h1>Selección de servicio</h1>
+
+    <form action="#">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="equipo.html">Equipo</a>
+            <a href="pedido.html">Pedidos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
+        </nav>
+        <br>
+
+        <div class=" grupo_grid_servicios">
+            <div class="grupo_servicios">
+                <input type="checkbox" id="servicio1" name="servicios[]" value="limpieza">
+                <label for = "servicio1">
+                    Limpieza interna y mantenimiento
+                </label>
+            </div>
+
+            <div class="grupo_servicios">
+                <input type="checkbox" id="servicio2" name="servicios[]" value="componentes">
+                <label for = "servicio2">
+                    Cambio de componentes y armado de pc
+                </label>
+            </div>
+            <div class="grupo_servicios">
+                <input type="checkbox" id="servicio3" name="servicios[]" value="instalacion">
+                <label for = "servicio3">
+                    Instalación de software y SO
+                </label>
+            </div>
+            <div class="grupo_servicios">
+                <input type="checkbox" id="servicio4" name="servicios[]" value="diagnostico">
+                <label for = "servicio4">
+                    Diagnostico de fallas
+                </label>
+            </div><br>
+
+        </div>
+
+        <div class="pago-titulo">
+            <p>Seleccione el medio de pago: </p>
+        </div>
+
+        <div class="pago">
+            <input type="radio" id="efectivo" name="pago" value="efectivo" required>
+            <label for="efectivo">Efectivo</label>
+        </div>
+            
+        <div class="pago">
+            <input type="radio" id="transferencia" name="pago" value="transferencia" required>
+            <label for="transferencia">Transferencia</label>
+        </div>
+        
+        <div class="pago">
+            <input type="radio" id="debito" name="pago" value="debito" required>
+            <label for="debito">Tarjeta de débito</label>
+        </div><br>
+
+        <div class="fecha">
+            <label for="fecha_pedido">Fecha en la que realizó el pedido</label><br>
+            <input type="date" id="fecha_pedido" name="fecha_pedido" required>
+        </div><br>
+        
+        <div class = "botones">
+            <a href="../index.html"> <button type="button">Enviar pedido</button>
+            </a>
+            <button type="reset">Cancelar pedido</button>
+        </div>
+    </form>
+    <footer>
+        <p>2026 - SEICO Computación </p>
+    </footer>
+    </div>
+</body>
+</html>
