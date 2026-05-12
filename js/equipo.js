@@ -3,7 +3,7 @@ const contenedorEquipo = document.getElementById('contenedor-equipo')
 // funcion que obtiene los integrantes desde la API
 const cargarEquipo = async () => {
     try {
-        const respuesta = await fetch('http://localhost:3000/equipo')
+        const respuesta = await fetch('https://tp3-grupo3.onrender.com/equipo')
         const integrantes = await respuesta.json()
 
         // limpia el contenedor antes de agregar las cards
