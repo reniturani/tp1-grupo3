@@ -2,7 +2,7 @@ const cardContainer = document.querySelector('#card-container')
 
 async function servicios () {
     try {
-        const response = await fetch('http://localhost:3000/servicios')
+        const response = await fetch('https://tp3-grupo3.onrender.com/servicios/')
         const data = await response.json()
         console.log(data)
 
