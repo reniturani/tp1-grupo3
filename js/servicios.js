@@ -1,10 +1,9 @@
 const cardContainer = document.querySelector('#card-container')
 
-async function servicios () {
+async function servicios() {
     try {
         const response = await fetch('https://tp3-grupo3.onrender.com/servicios/')
         const data = await response.json()
-        console.log(data)
 
         data.forEach(servicio => {
     const div = document.createElement('div')
@@ -31,36 +30,33 @@ async function servicios () {
                 <p><strong>Descripción:</strong> ${data.desc}</p>
                 <p><strong>Precio:</strong> $${data.precio}</p>
             `
-        } catch {
-            console.log('Error al obtener detalle')
-        }
-    })
 
-    cardContainer.append(div)
-})
+            const boton = div.querySelector('button')
+            const detalleDiv = div.querySelector('.detalle-servicio')
+
+            boton.addEventListener('click', async () => {
+                try {
+                    const responseDetalle = await fetch(`https://tp3-grupo3.onrender.com/servicios/${servicio.id}`)
+                    const detalle = await responseDetalle.json()
+
+                    detalleDiv.innerHTML = `
+                        <p><strong>Nombre:</strong> ${detalle.nombre}</p>
+                        <p><strong>Detalle:</strong> ${detalle.detalle_largo}</p>
+                        <p><strong>Tiempo:</strong> ${detalle.tiempo_entrega}</p>
+                        <p><strong>Categoría:</strong> ${detalle.categoria}</p>
+                        <p><strong>Disponible:</strong> ${detalle.disponible ? 'Sí' : 'No'}</p>
+                    `
+                } catch {
+                    console.log('Error al obtener detalle')
+                }
+            })
+
+            cardContainer.append(div)
+        })
 
     } catch {
-        console.log('Error al obtener servicios')
+        console.log('Error, no se pudieron traer los servicios')
     }
 }
+
 servicios()
-
-window.verDetalle = async function(id) {
-    try {
-        const response = await fetch(`https://tp3-grupo3.onrender.com/servicios/${id}`)
-        const data = await response.json()
-
-        const detalle = document.querySelector('#detalle-servicio')
-
-        detalle.innerHTML = `
-            <div class="tarjeta-servicio">
-                <h2>Detalle</h2>
-                <p>ID: ${data.id}</p>
-                <p>${data.desc}</p>
-                <p>$${data.precio}</p>
-            </div>
-        `
-    } catch {
-        console.log('Error al obtener detalle')
-    }
-}
