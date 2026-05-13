@@ -23,7 +23,7 @@ async function servicios () {
 
     boton.addEventListener('click', async () => {
         try {
-            const response = await fetch(`https://tp3-grupo3.onrender.com/servicios/${servicio.id}`)
+            const response = await fetch(`https://tp3-grupo3.onrender.com/servicios/`)
             const data = await response.json()
 
             detalleDiv.innerHTML = `
@@ -44,23 +44,3 @@ async function servicios () {
     }
 }
 servicios()
-
-window.verDetalle = async function(id) {
-    try {
-        const response = await fetch(`https://tp3-grupo3.onrender.com/servicios/${id}`)
-        const data = await response.json()
-
-        const detalle = document.querySelector('#detalle-servicio')
-
-        detalle.innerHTML = `
-            <div class="tarjeta-servicio">
-                <h2>Detalle</h2>
-                <p>ID: ${data.id}</p>
-                <p>${data.desc}</p>
-                <p>$${data.precio}</p>
-            </div>
-        `
-    } catch {
-        console.log('Error al obtener detalle')
-    }
-}
