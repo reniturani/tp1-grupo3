@@ -9,12 +9,35 @@ async function servicios() {
             const div = document.createElement('div')
             div.classList.add('tarjeta-servicio')
 
+<<<<<<< HEAD
+    div.innerHTML = `
+        <h2>${servicio.desc}</h2>
+        <img src="../assets/reparacion.jpg" width="300" height="200">
+        <p>Precio: <span class="precio">${servicio.precio}</span></p>
+        <button>Ver detalle</button>
+        <div class="detalle"></div>
+    `
+
+    const boton = div.querySelector('button')
+    const detalleDiv = div.querySelector('.detalle')
+
+    boton.addEventListener('click', async () => {
+        try {
+            const response = await fetch(`https://tp3-grupo3.onrender.com/servicios/`)
+            const data = await response.json()
+
+            detalleDiv.innerHTML = `
+                <p><strong>ID:</strong> ${data.id}</p>
+                <p><strong>Descripción:</strong> ${data.desc}</p>
+                <p><strong>Precio:</strong> $${data.precio}</p>
+=======
             div.innerHTML = `
                 <h2>${servicio.desc}</h2>
                 <img src="../assets/reparacion.jpg" width="300" height="200">
                 <p>Precio: <span class="precio">$${servicio.precio}</span></p>
                 <button>Ver detalle</button>
                 <div class="detalle"></div>
+>>>>>>> 868975b87d7113ca7d3e358b67c287192c8bd0d5
             `
 
             const boton = div.querySelector('button')
@@ -43,5 +66,9 @@ async function servicios() {
         console.log('Error, no se pudieron traer los servicios')
     }
 }
+<<<<<<< HEAD
+servicios()
+=======
 
 servicios()
+>>>>>>> 868975b87d7113ca7d3e358b67c287192c8bd0d5
