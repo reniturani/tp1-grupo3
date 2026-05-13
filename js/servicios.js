@@ -26,7 +26,6 @@ async function servicios() {
                     const detalle = await responseDetalle.json()
 
                     detalleDiv.innerHTML = `
-                        <p><strong>Nombre:</strong> ${detalle.nombre}</p>
                         <p><strong>Detalle:</strong> ${detalle.detalle_largo}</p>
                         <p><strong>Tiempo:</strong> ${detalle.tiempo_entrega}</p>
                         <p><strong>Categoría:</strong> ${detalle.categoria}</p>
