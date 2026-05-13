@@ -11,10 +11,9 @@ async function servicios () {
     div.classList.add('tarjeta-servicio')
 
     div.innerHTML = `
-        <h2>💾 Instalación de software, hardware y SO</h2>
-        <img src="../assets/sistem_op.jpg" width="300" height="200">
+        <h2>${servicio.desc}</h2>
+        <img src="../assets/reparacion.jpg" width="300" height="200">
         <p>Precio: <span class="precio">${servicio.precio}</span></p>
-        <h3>${servicio.desc}</h3>
         <button>Ver detalle</button>
         <div class="detalle"></div>
     `
