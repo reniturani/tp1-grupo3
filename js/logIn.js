@@ -1,8 +1,8 @@
 const URL_API = "https://tp3-grupo3.onrender.com"
 
-const formulario = document.getElementById('formulario-login')
+const formulario = document.querySelector('.login-form')
 const inputEmail = document.getElementById('email')
-const divMensaje = document.getElementById('mensaje')
+const divMensaje = document.getElementById('divMensaje')
 
 formulario.addEventListener('submit', async function (e) {
     e.preventDefault()
